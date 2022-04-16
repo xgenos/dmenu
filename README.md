@@ -1,5 +1,9 @@
 # Biswa's dmenu
 
+## DMENU
+
+<img align="center" src="dmenu.png">
+
 Extra stuff added to vanilla dmenu:
 
 - reads Xresources (ergo pywal compatible)
