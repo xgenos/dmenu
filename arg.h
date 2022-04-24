@@ -1,16 +1,4 @@
 /*
-//         .             .              .		  
-//         |             |              |           .	  
-// ,-. ,-. |-. ,-. . ,-. |  ,_, ,-. ,-. |-. ,-,-. . |- ,_, 
-// | | ,-| | | |   | |-' |   /  `-. |   | | | | | | |   /  
-// `-| `-^ ^-' '   ' `-' `' '"' `-' `-' ' ' ' ' ' ' `' '"' 
-//  ,|							  
-//  `'							  
-// GITHUB:https://github.com/gabrielzschmitz		  
-// INSTAGRAM:https://www.instagram.com/gabrielz.schmitz/   
-// DOTFILES:https://github.com/gabrielzschmitz/dotfiles/   
-*/
-/*
  * Copy me if you can.
  * by 20h
  */

@@ -1,13 +1,3 @@
-#         .             .              .		  
-#         |             |              |           .	  
-# ,-. ,-. |-. ,-. . ,-. |  ,_, ,-. ,-. |-. ,-,-. . |- ,_, 
-# | | ,-| | | |   | |-' |   /  `-. |   | | | | | | |   /  
-# `-| `-^ ^-' '   ' `-' `' '"' `-' `-' ' ' ' ' ' ' `' '"' 
-#  ,|							  
-#  `'							  
-# GITHUB:https://github.com/gabrielzschmitz		  
-# INSTAGRAM:https://www.instagram.com/gabrielz.schmitz/   
-# DOTFILES:https://github.com/gabrielzschmitz/dotfiles/   
 # dmenu - dynamic menu
 # See LICENSE file for copyright and license details.
 
@@ -27,6 +17,9 @@ options:
 .c.o:
 	$(CC) -c $(CFLAGS) $<
 
+config.h:
+	cp config.def.h $@
+
 $(OBJ): arg.h config.h config.mk drw.h
 
 dmenu: dmenu.o drw.o util.o
@@ -36,11 +29,11 @@ stest: stest.o
 	$(CC) -o $@ stest.o $(LDFLAGS)
 
 clean:
-	rm -f dmenu stest $(OBJ) dmenu-$(VERSION).tar.gz *.orig *.rej
+	rm -f dmenu stest $(OBJ) dmenu-$(VERSION).tar.gz *.rej *.orig
 
 dist: clean
 	mkdir -p dmenu-$(VERSION)
-	cp LICENSE Makefile README arg.h config.mk dmenu.1\
+	cp LICENSE Makefile README arg.h config.def.h config.mk dmenu.1\
 		drw.h util.h dmenu_path dmenu_run stest.1 $(SRC)\
 		dmenu-$(VERSION)
 	tar -cf dmenu-$(VERSION).tar dmenu-$(VERSION)

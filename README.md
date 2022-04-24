@@ -1,8 +1,4 @@
-# Biswa's dmenu
-
-## DMENU
-
-<img align="center" src="dmenu.png">
+# Luke's dmenu
 
 Extra stuff added to vanilla dmenu:
 
